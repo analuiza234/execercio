@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio</title>
+</head>
+<body>
+    <label>Valor1</label>
+    <input type="number" name="valor" id="valor">
+    <button onclick="verificar()">ok</button>
+    <div id="saida"></div>
+</body>
+</html>
+<script>
+function verificar(){
+   let valor = document.getElementById("valor").value;
+   let a = 0;
+   let b = 0;
+   if(valor > 0){
+       a = valor;
+   }
+   else{ 
+       b = valor;
+   }
+   document.getElementById("saida").innerHTML ="<p>A:" + a + "</p><p>B:" + b +"</p>";
+}
+
+</script>
